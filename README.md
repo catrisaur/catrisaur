@@ -1,5 +1,14 @@
-## Hi there 👋
+## hey!
 
+caffeine and crashouts
+
+<div align="center">
+  <a href="https://open.spotify.com/user/11155947511">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=11155947511&count=5" alt="Spotify recently played"  />
+  </a>
+</div>
+
+###
 <!--
 **catrisaur/catrisaur** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
