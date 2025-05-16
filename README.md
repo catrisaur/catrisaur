@@ -1,27 +1,12 @@
 <div align="center">
-## hey
+
+## ✿ hello there ✿
+
+🌙 late nights, lo-fi vibes, and a little too much caffeine ☕  
+currently vibing, coding, or both 🎶
+
+<a href="https://open.spotify.com/user/11155947511">
+  <img src="https://spotify-recently-played-readme.vercel.app/api?user=11155947511&count=5" alt="Spotify recently played" />
+</a>
+
 </div>
-
-<div align="center">caffeine and crashouts</div>
-
-<div align="center">
-  <a href="https://open.spotify.com/user/11155947511">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=11155947511&count=5" alt="Spotify recently played"  />
-  </a>
-</div>
-
-###
-<!--
-**catrisaur/catrisaur** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
