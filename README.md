@@ -1,6 +1,8 @@
-## hey!
+<div align="center">
+## hey
+</div>
 
-caffeine and crashouts
+<div align="center">caffeine and crashouts</div>
 
 <div align="center">
   <a href="https://open.spotify.com/user/11155947511">
