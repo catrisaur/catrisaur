@@ -2,7 +2,7 @@
 
 ## 🍓 hi, i'm paige
 
-running on too much caffeine and way too little sleep
+running on too much caffeine and way too little sleep...
 probably crashing out rn...
 
 <a href="https://open.spotify.com/user/11155947511">
