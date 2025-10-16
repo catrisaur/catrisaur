@@ -1,3 +1,18 @@
+// Configuration
+const CONFIG = {
+    RESPONSE_DELAY: 1000, // milliseconds
+    EMAILS: {
+        privacy: 'privacy@company.com',
+        ethics: 'ethics@company.com',
+        safety: 'safety@company.com',
+        hr: 'hr@company.com',
+        legal: 'legal@company.com',
+        compliance: 'compliance@company.com',
+        communications: 'communications@company.com'
+    },
+    HOTLINE: '1-800-ETHICS1' // Ethics hotline number
+};
+
 // Ethics and Compliance Knowledge Base
 const knowledgeBase = {
     codeOfConduct: {
@@ -28,7 +43,7 @@ All employees are required to read, understand, and comply with our Code of Cond
 • Delete data when no longer needed
 • Obtain consent before collecting personal information
 
-For questions, contact: privacy@company.com`
+For questions, contact: ${CONFIG.EMAILS.privacy}`
     },
     
     antiCorruption: {
@@ -47,7 +62,7 @@ Guidelines for gifts and entertainment:
 • Government officials: Maximum $25 value
 • Always maintain transparency
 
-Report any suspected corruption to: ethics@company.com`
+Report any suspected corruption to: ${CONFIG.EMAILS.ethics}`
     },
     
     conflictOfInterest: {
@@ -66,7 +81,7 @@ How to handle conflicts:
 3. Recuse yourself from related decisions
 4. Seek guidance from Ethics team when uncertain
 
-Contact ethics@company.com for disclosure forms.`
+Contact ${CONFIG.EMAILS.ethics} for disclosure forms.`
     },
     
     workplaceSafety: {
@@ -83,7 +98,7 @@ Employee responsibilities:
 In case of emergency:
 • Medical emergency: Call 911
 • Fire: Evacuate and call emergency services
-• Safety concerns: Contact safety@company.com
+• Safety concerns: Contact ${CONFIG.EMAILS.safety}
 • Report all accidents/injuries to HR immediately
 
 Your safety matters - speak up about any concerns!`
@@ -94,11 +109,11 @@ Your safety matters - speak up about any concerns!`
         response: `How to Report Violations and Concerns:
 
 Multiple reporting channels available:
-• Ethics Hotline: 1-800-XXX-XXXX (24/7, anonymous)
-• Email: ethics@company.com
+• Ethics Hotline: ${CONFIG.HOTLINE} (24/7, anonymous)
+• Email: ${CONFIG.EMAILS.ethics}
 • Online: Submit via ethics portal
 • Manager or HR representative
-• Legal Department: legal@company.com
+• Legal Department: ${CONFIG.EMAILS.legal}
 
 What to report:
 • Policy violations
@@ -129,8 +144,8 @@ Protected characteristics:
 • Pregnancy, veteran status
 
 Report immediately:
-• HR Department: hr@company.com
-• Ethics Hotline: 1-800-XXX-XXXX
+• HR Department: ${CONFIG.EMAILS.hr}
+• Ethics Hotline: ${CONFIG.HOTLINE}
 • Your manager or any HR representative
 
 All complaints are investigated promptly and confidentially.`
@@ -158,7 +173,7 @@ Not acceptable:
 • Disparaging company, colleagues, or customers
 • Posting offensive or discriminatory content
 
-Questions? Contact: communications@company.com`
+Questions? Contact: ${CONFIG.EMAILS.communications}`
     },
     
     intellectualProperty: {
@@ -185,7 +200,7 @@ When you leave:
 • Don't take confidential information
 • Continue to protect trade secrets
 
-Contact: legal@company.com for IP questions.`
+Contact: ${CONFIG.EMAILS.legal} for IP questions.`
     },
     
     compliance: {
@@ -213,7 +228,7 @@ Non-compliance can result in:
 • Loss of licenses or contracts
 • Reputational damage
 
-Questions? Contact: compliance@company.com`
+Questions? Contact: ${CONFIG.EMAILS.compliance}`
     }
 };
 
@@ -268,7 +283,7 @@ class EthicsComplianceBot {
             this.removeTypingIndicator();
             const response = this.generateResponse(message);
             this.addMessage(response, 'bot');
-        }, 1000);
+        }, CONFIG.RESPONSE_DELAY);
     }
     
     addMessage(text, sender) {
