@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics & Compliance Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Ethics & Compliance Assistant</h1>
+            <p class="subtitle">Ask me about company policies, ethical guidelines, and compliance requirements</p>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your Ethics & Compliance Assistant. I can help you with questions about:</p>
+                        <ul>
+                            <li>Code of Conduct</li>
+                            <li>Data Privacy & Protection</li>
+                            <li>Anti-Corruption & Bribery</li>
+                            <li>Conflict of Interest</li>
+                            <li>Workplace Safety</li>
+                            <li>Reporting Violations</li>
+                        </ul>
+                        <p>How can I assist you today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-actions">
+                <button class="quick-action-btn" data-question="What is the code of conduct?">Code of Conduct</button>
+                <button class="quick-action-btn" data-question="How do I report a violation?">Report Violation</button>
+                <button class="quick-action-btn" data-question="What is data privacy policy?">Data Privacy</button>
+                <button class="quick-action-btn" data-question="What is conflict of interest?">Conflict of Interest</button>
+            </div>
+            
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="Type your question here..."
+                    autocomplete="off"
+                >
+                <button id="sendButton" class="send-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>This chatbot provides general guidance. For specific situations, please consult with HR or Legal.</p>
+        </div>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html>
